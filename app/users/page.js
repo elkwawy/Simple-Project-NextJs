@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function UsersPage() {
@@ -37,7 +36,7 @@ export default function UsersPage() {
             className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] p-6"
           >
             {/* صورة المستخدم */}
-            <Image
+            <img
               src={user.image}
               alt={user.firstName}
               className="w-24 h-24 rounded-full mx-auto mb-4"
@@ -97,6 +96,8 @@ export default function UsersPage() {
                 <strong>Company Name:</strong> {user.company.name}
               </p>
             </div>
+
+   
 
             {/* بيانات أخرى */}
             <div className="mt-4">
