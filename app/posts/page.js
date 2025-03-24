@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Suspense, use } from "react";
 export const metadata = {
@@ -25,7 +26,7 @@ function PostsList() {
           className="space-y-2 bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
         >
           <Link href={`/posts/${post.id}`}>
-            <img
+            <Image
               src={`https://ui-avatars.com/api/?name=${post.title}&size=128`}
               alt={post.title}
               className="rounded-lg w-20 h-20 mb-3"

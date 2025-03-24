@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 // (SSR) جلب المقالات أثناء كل طلب 
@@ -37,7 +38,7 @@ export default async function ArticlesPage() {
             key={article.id}
             className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
           >
-            <img
+            <Image
               src={`https://picsum.photos/400/250?random=${article.id}`}
               alt={article.title}
               className="w-full h-48 object-cover"

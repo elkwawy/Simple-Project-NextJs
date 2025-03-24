@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ArticlePage(props) {
@@ -25,7 +26,7 @@ export default function ArticlePage(props) {
       <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
         {article.date}
       </p>
-      <img
+      <Image
         src={article.image}
         alt={article.title}
         className="w-full h-80 object-cover rounded-lg my-6"

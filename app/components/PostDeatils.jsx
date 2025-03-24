@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default async function PostDeatils({ postId }) {
@@ -14,7 +15,7 @@ export default async function PostDeatils({ postId }) {
 
   return (
     <div className="space-y-5">
-      <img
+      <Image
         src={`https://ui-avatars.com/api/?name=${post.title}&size=128`}
         alt={post.title}
         className="rounded-lg w-40 "
